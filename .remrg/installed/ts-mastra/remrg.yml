@@ -1,0 +1,8 @@
+name: ts-mastra
+version: 1.0.0
+description: 
+type: feature
+license: MIT
+access: public
+roots:
+- ts-node
