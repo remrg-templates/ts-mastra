@@ -39,3 +39,15 @@ scratch/
 
 # remrg
 .remrg/cache
+
+# Mastra
+output.txt
+.mastra
+src/mastra/public/
+.env.development
+*.db
+*.db-*
+.netlify
+.vercel
+*.duckdb
+*.duckdb.wal
