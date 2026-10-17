@@ -27,3 +27,10 @@
 **/.azure
 **/.kube
 **/.docker
+
+# Installed or generated inside the application image
+**/node_modules
+.mastra
+dist
+.agents
+.github
