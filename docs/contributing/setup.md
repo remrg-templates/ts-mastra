@@ -29,3 +29,11 @@ cp .env.example .env
 
 - `npm run dev`
 - View the [Development Guide](./development.md)
+
+## Docker
+
+Run docker compose to start:
+
+```
+docker compose up --build -d
+```
