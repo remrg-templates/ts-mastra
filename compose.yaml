@@ -11,6 +11,8 @@ services:
       OPENAI_API_KEY: ${OPENAI_API_KEY:-}
       LOCAL_MODEL_URL: ${LOCAL_MODEL_URL}
       LOCAL_STABLEDIFFUSION_URL: ${LOCAL_STABLEDIFFUSION_URL}
+    volumes:
+      - mastra-data:/app/data
     ports:
       - '127.0.0.1:${PORT:-4111}:${PORT:-4111}'
     healthcheck:
@@ -24,3 +26,6 @@ services:
       start_period: 30s
       retries: 5
     restart: unless-stopped
+
+volumes:
+  mastra-data:

@@ -19,6 +19,7 @@
 # Local environment and secrets
 **/.env
 **/.env.*
+!**/.env.ssh.json
 !**/.env.example
 **/.secrets
 **/secrets
@@ -34,3 +35,9 @@
 dist
 .agents
 .github
+
+# Local runtime databases
+**/*.db
+**/*.db-*
+**/*.duckdb
+**/*.duckdb.wal

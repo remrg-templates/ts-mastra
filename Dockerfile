@@ -12,8 +12,12 @@ RUN cp /app/package-lock.json ./ \
 
 FROM node:22-bookworm-slim AS runtime
 ENV NODE_ENV=production
+ENV TURSO_DATABASE_URL=file:/app/data/mastra.db
+ENV DUCKDB_PATH=/app/data/mastra.duckdb
 WORKDIR /app
 COPY --from=build --chown=node:node /app/.mastra/output ./
+RUN mkdir -p /app/data && chown node:node /app /app/data
 USER node
+VOLUME ["/app/data"]
 EXPOSE 4111
 CMD ["node", "index.mjs"]

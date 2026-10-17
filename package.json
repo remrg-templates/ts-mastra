@@ -25,7 +25,7 @@
 	"dependencies": {
 		"@mastra/core": "^1.60.0",
 		"@mastra/duckdb": "^1.6.2",
-		"@mastra/editor": "^0.14.0",
+		"@mastra/editor": "^0.16.3",
 		"@mastra/libsql": "^1.21.0",
 		"@mastra/memory": "^1.27.0",
 		"@mastra/observability": "^1.17.1",
